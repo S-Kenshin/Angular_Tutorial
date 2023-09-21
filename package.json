@@ -1,0 +1,22 @@
+{
+  "name": "angular_tutorial",
+  "version": "1.0.0",
+  "description": "Angular 公式チュートリアルです https://angular.jp/tutorial/first-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S-Kenshin/Angular_Tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S-Kenshin/Angular_Tutorial/issues"
+  },
+  "homepage": "https://github.com/S-Kenshin/Angular_Tutorial#readme",
+  "dependencies": {
+    "@angular/cli": "^16.2.3"
+  }
+}
