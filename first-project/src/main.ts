@@ -1,3 +1,7 @@
+/*
+ *  Protractor support is deprecated in Angular.
+ *  Protractor is used in this example for compatibility with Angular documentation tools.
+ */
 import {
   bootstrapApplication,
   provideProtractorTestingSupport,
