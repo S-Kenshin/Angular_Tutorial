@@ -1,6 +1,4 @@
-import { NumberValueAccessor } from '@angular/forms';
-
-export interface Housinglocation {
+export interface HousingLocation {
   id: number;
   name: string;
   city: string;
