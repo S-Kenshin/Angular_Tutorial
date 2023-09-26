@@ -1,16 +1,26 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Housinglocation } from '../housinglocation';
+import { HousingLocation } from '../housinglocation';
 
 @Component({
   selector: 'app-housing-location',
   standalone: true,
   imports: [CommonModule],
-  template: ` <p>housing-location works!</p> `,
+  template: `
+    <section class="listing">
+      <img
+        class="listing-photo"
+        [src]="housingLocation.photo"
+        alt="Exterior photo of {{ housingLocation.name }}"
+      />
+      <h2 class="listing-heading">{{ housingLocation.name }}</h2>
+      <p class="listing-location">
+        {{ housingLocation.city }}, {{ housingLocation.state }}
+      </p>
+    </section>
+  `,
   styleUrls: ['./housing-location.component.css'],
 })
 export class HousingLocationComponent {
-  // !を付ける必要があるのは、入力に値が渡される事を期待している為。
-  // この場合、デフォルト値はなし
-  @Input() housingLocation!: Housinglocation;
+  @Input() housingLocation!: HousingLocation;
 }
